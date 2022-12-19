@@ -45,18 +45,18 @@ void PrintArray(int[,] array)
     }
 }
 
-void GetProductTwoMatrices(int[,] firstMartrix, int[,] secondMartrix, int[,] resultMatrix)
+void GetProductTwoMatrices(int[,] firstMartrices, int[,] secondMartrices, int[,] resultMatrices)
 {
-    for (int i = 0; i < resultMatrix.GetLength(0); i++)
+    for (int i = 0; i < resultMatrices.GetLength(0); i++)
     {
-        for (int j = 0; j < resultMatrix.GetLength(1); j++)
+        for (int j = 0; j < resultMatrices.GetLength(1); j++)
         {
             int sum = 0;
-            for (int k = 0; k < firstMartrix.GetLength(1); k++)
+            for (int k = 0; k < firstMartrices.GetLength(1); k++)
             {
-                sum += firstMartrix[i, k] * secondMartrix[k, j];
+                sum += firstMartrices[i, k] * secondMartrices[k, j];
             }
-            resultMatrix[i, j] = sum;
+            resultMatrices[i, j] = sum;
         }
     }
 }
