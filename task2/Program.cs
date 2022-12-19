@@ -10,7 +10,7 @@
 int[,] array = Get2DArray(3, 4);
 Print2DArray(array);
 int minSumLine = GetMinimumValues(array);
-int sumLine = GetSumLineElements(array,minSumLine);
+int sumLine = GetSumLineElements(array, minSumLine);
 
 void Print2DArray(int[,] array)
 {
@@ -63,4 +63,4 @@ int GetSumLineElements(int[,] array, int i)
     }
     return sumLine;
 }
-Console.WriteLine($"{minSumLine+1} - строкa с наименьшей суммой ({sumLine}) элементов ");
+Console.WriteLine($"{minSumLine + 1} - строкa с наименьшей суммой ({sumLine}) элементов ");
