@@ -12,7 +12,6 @@
 int[,] array = Get2DArray(3, 4);
 Print2DArray(array);
 array = GetNewArray();
-
 void Print2DArray(int[,] array)
 {
     for (var i = 0; i < array.GetLength(0); i++)
